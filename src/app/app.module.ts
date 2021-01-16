@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LandingComponent } from './components/landing/landing.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent,
+    PageNotFoundComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

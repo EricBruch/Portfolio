@@ -18,7 +18,10 @@ export class LandingComponent implements OnInit {
   form!: CanvasForm;
   lines: Group[] = [];
   loaded: boolean = false;
-  // ### Colors ###
+
+  /* 
+  ################# Colors #################
+  */
   bg_color: string = '#02043c'; //#d3d3d3    #00172D
   // Color of Lines NOT touching the circle around the mouse directly OR in distance
   visibleLineOutside: string = '#c00'; //    #4CBB17

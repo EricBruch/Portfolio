@@ -9,6 +9,8 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
+  ericImgUrl: string = '/assets/pictures/eric_bruch.jpg';
+
   ngOnInit(): void {
   }
 

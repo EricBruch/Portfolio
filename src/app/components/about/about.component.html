@@ -1,1 +1,45 @@
-<p>about works!</p>
+<mat-drawer-container [hasBackdrop]="true">
+    <!--    Sidebar content     -->
+    <mat-drawer #sidebar [mode]="'over'">
+        <p>Hello I'm there</p>
+    </mat-drawer>
+
+    <!--    Content  -->
+    <mat-drawer-content>
+        <!--    navbar  -->
+        <div class="bigView">
+            <nav class="navBar flex-center">
+                <a class="navItem">home</a>
+                <a class="navItem">about</a>
+                <a class="navItem">portfolio</a>
+                <a class="navItem">contact</a>
+            </nav>
+        </div>
+
+        <div class="smallView">
+            <nav class="navBar flex-center-right">
+                <button class="smallView" mat-icon-button (click)="sidebar.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </nav>
+        </div>
+        <!-- ############  -->
+
+        <div>
+            <div class="sectionHeadingContainer">
+                <h1 class="sectionHeading" id="about">About</h1>
+                <div class="headerLine"></div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <img [src]="ericImgUrl" width="500px" height="500px">
+            </div>
+        </div>
+
+    </mat-drawer-content>
+
+
+
+</mat-drawer-container>

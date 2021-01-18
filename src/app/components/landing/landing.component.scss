@@ -9,43 +9,29 @@
   position: relative;
 
   #ptsAnimation {
-    height: 100vh;
-    width: 100vw;
-    box-sizing: content-box;
+    height: 100%;
+    width: 100%;
   }
 
   .landingTextContainer {
-/*     width: 300px;
-    height: 100px;
-    background-color: #02043c; */
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
     font-size: 2.5rem;
     color: white;
 
     .greeting {
-      margin-top: 0;
-      margin-bottom: 16px;
-      text-align: center;
+      background-color: #02043c;
+      margin-bottom: 32px;
       .nameColor {
         color: #c00;
         font-size: 3rem;
         background-color: #02043c;
       }
     }
-
-    .aboutMeLink {
-        padding: 8px;
-        border: 1px solid white;
-        border-radius: 25px;
-        background-color: #02043c;
-        cursor: pointer;
-    }
-    .aboutMeLink:hover {
-        background-color: #c00;
-    }
   }
 }
+//  dark blue: #02043c
+//  red: #c00

@@ -1,0 +1,45 @@
+/*
+  Navbar
+*/
+
+.navBar {
+    background-color: #02043c;
+    color: white;
+    height: 5vh;
+    text-transform: uppercase;
+    border-bottom: 4px solid green;
+    margin-bottom: 8px;
+  
+    .navItem {
+      cursor: pointer;
+      transition: all 225ms ease-in-out;
+    }
+  }
+  
+  .bigView {
+    display: none;
+  
+    .flex-center {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+  
+  .smallView {
+    display: default;
+  
+    .flex-center-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  
+  a:hover {
+    color: #c00;
+  }
+
+  .matDrawerContent {
+    display: initial;
+  }

@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutComponent } from './components/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/about/skills/skills.component';
-import { SectionHeadingComponent } from './components/about/section-heading/section-heading.component';
+import { SectionHeadingComponent } from './components/utils/section-heading/section-heading.component';
 
 @NgModule({
   declarations: [

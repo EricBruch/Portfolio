@@ -1,1 +1,38 @@
-<router-outlet></router-outlet>
+<ng-template [ngIf]="router.url==='/'">
+    <router-outlet></router-outlet>
+</ng-template>
+
+<ng-template [ngIf]="router.url!=='/'">
+    <mat-drawer-container [hasBackdrop]="true">
+        <!--    Sidebar content     -->
+        <mat-drawer #sidebar [mode]="'over'">
+            <p>Hello I'm there</p>
+        </mat-drawer>
+
+        <!--    Content mat-drawer  -->
+        <mat-drawer-content class="matDrawerContent">
+
+            <!--    navbar  -->
+            <div class="bigView">
+                <nav class="navBar flex-center">
+                    <a class="navItem">home</a>
+                    <a class="navItem">about</a>
+                    <a class="navItem">portfolio</a>
+                    <a class="navItem">contact</a>
+                </nav>
+            </div>
+
+            <div class="smallView">
+                <nav class="navBar flex-center-right">
+                    <button class="smallView" mat-icon-button (click)="sidebar.toggle()">
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                </nav>
+            </div>
+            <!-- ############  -->
+
+            <router-outlet></router-outlet>
+
+        </mat-drawer-content>
+    </mat-drawer-container>
+</ng-template>

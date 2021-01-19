@@ -1,0 +1,13 @@
+<div *ngFor="let skill of skills">
+    <div class="skill text-center">
+        <div class="skillLabel">
+            {{ skill.label }}
+        </div>
+        <div class="skillProgressBarContainer">
+            <div [style.width]="skill.skillLevel" class="skillProgressBar"></div>
+        </div>
+        <div class="skillLevel">
+            {{ skill.skillLevel }}
+        </div>
+    </div>
+</div>

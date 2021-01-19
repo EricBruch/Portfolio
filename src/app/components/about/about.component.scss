@@ -1,3 +1,7 @@
+/*
+  Navbar
+*/
+
 .navBar {
   background-color: #02043c;
   color: white;
@@ -32,26 +36,46 @@
   }
 }
 
-.sectionHeadingContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
-
-  .sectionHeading {
-    margin-bottom: 5px;
-  }
-
-  .headerLine {
-    width: 20px;
-    height: 3px;
-    background-color: black;
-  }
-}
-
 a:hover {
   color: #c00;
 }
+
+
+
+/*
+  Section About
+*/
+
+.matDrawerContent {
+  display: initial;
+}
+
+.personContainer {
+  display: flex;
+  flex-direction: row;
+
+  .ericImg {
+    width: 300px;
+    border-radius: 20%;
+  }
+
+  .skillsContainer {
+    width: 100%;
+    min-width: 40rem;
+    padding: 32px;
+  }
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personIcons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 //  dark blue: #02043c
 //  red: #c00

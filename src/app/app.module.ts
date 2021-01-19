@@ -10,6 +10,8 @@ import { LandingComponent } from './components/landing/landing.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutComponent } from './components/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './components/about/skills/skills.component';
+import { SectionHeadingComponent } from './components/about/section-heading/section-heading.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingComponent,
     PageNotFoundComponent,
     AboutComponent,
+    SkillsComponent,
+    SectionHeadingComponent,
   ],
   imports: [
     BrowserModule,

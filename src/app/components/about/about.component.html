@@ -5,7 +5,7 @@
     </mat-drawer>
 
     <!--    Content  -->
-    <mat-drawer-content>
+    <mat-drawer-content class="matDrawerContent">
         <!--    navbar  -->
         <div class="bigView">
             <nav class="navBar flex-center">
@@ -25,18 +25,43 @@
         </div>
         <!-- ############  -->
 
-        <div>
-            <div class="sectionHeadingContainer">
-                <h1 class="sectionHeading" id="about">About</h1>
-                <div class="headerLine"></div>
+        <app-section-heading [heading]="heading_0"></app-section-heading>
+
+
+
+        <div class="personContainer">
+            <div class="flex-column-center text-center">
+                <img [src]="ericImgUrl" class="ericImg">
+                <h3>Who's Eric?</h3>
+                <p>
+                    I'm a Front-End Developer currently located in Vienna, Austria.<br>
+                    &#60;Astonishing information about Eric Bruch&#62;<br>
+                    create great applications
+                </p>
+            </div>
+            <app-skills class="skillsContainer"></app-skills>
+        </div>
+
+        <div class="personIcons">
+            <div>
+                <mat-icon>grade</mat-icon>
+                <p>I worked previously</p>
+            </div>
+            <div>
+                <mat-icon>favorite</mat-icon>
+                <p>Lorem Ipsum Dollar Bitches Pollares</p>
+            </div>
+            <div>
+                <mat-icon>all_inclusive</mat-icon>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. id numquam consequuntur molestiae reiciendis magnam totam quisquam.</p>
+            </div>
+            <div>
+                <mat-icon>personal_video</mat-icon>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta maiores </p>
             </div>
         </div>
 
-        <div>
-            <div>
-                <img [src]="ericImgUrl" width="500px" height="500px">
-            </div>
-        </div>
+        <app-section-heading [heading]="heading_1"></app-section-heading>
 
     </mat-drawer-content>
 

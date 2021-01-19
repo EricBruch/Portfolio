@@ -1,0 +1,34 @@
+.skill {
+  --skillHeight: 20px;
+
+  display: flex;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  height: var(--skillHeight);
+  width: 100%;
+  background-color: gray;
+
+  .skillLabel {
+    width: 20%;
+    height: var(--skillHeight);
+    background-color: var(--white);
+  }
+
+  .skillProgressBarContainer {
+    height: var(--skillHeight);
+    width: 70%;
+
+    .skillProgressBar {
+      height: var(--skillHeight);
+      //   width: 10%;
+      background-color: blue;
+    }
+  }
+
+  .skillLevel {
+    width: 10%;
+    height: var(--skillHeight);
+    background-color: var(--white);
+  }
+}

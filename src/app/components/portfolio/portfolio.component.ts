@@ -9,6 +9,8 @@ export class PortfolioComponent implements OnInit {
 
   constructor() { }
 
+  heading: string = 'portfolio';
+
   ngOnInit(): void {
   }
 

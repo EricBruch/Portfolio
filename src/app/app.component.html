@@ -7,6 +7,9 @@
         <!--    Sidebar content     -->
         <mat-drawer #sidebar [mode]="'over'">
             <p>Hello I'm there</p>
+            <a mat-raised-button routerLink="/">Landing</a>
+            <a mat-raised-button routerLink="/about">About</a>
+            <a mat-raised-button routerLink="/portfolio">About</a>
         </mat-drawer>
 
         <!--    Content mat-drawer  -->
@@ -15,9 +18,9 @@
             <!--    navbar  -->
             <div class="bigView">
                 <nav class="navBar flex-center">
-                    <a class="navItem">home</a>
-                    <a class="navItem">about</a>
-                    <a class="navItem">portfolio</a>
+                    <a routerLink="/" class="navItem">home</a>
+                    <a routerLink="/about" class="navItem">about</a>
+                    <a routerLink="/portfolio" class="navItem">portfolio</a>
                     <a class="navItem">contact</a>
                 </nav>
             </div>

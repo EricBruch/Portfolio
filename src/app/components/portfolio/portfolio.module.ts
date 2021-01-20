@@ -4,15 +4,11 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioComponent } from './portfolio.component';
-import { SharedComponentsModule } from '../sharedComponents/shared-components/shared-components.module';
+import { SharedModule } from '../sharedComponents/shared-components.module';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
-  declarations: [PortfolioComponent],
-  imports: [
-    CommonModule,
-    PortfolioRoutingModule,
-    MatTabsModule,
-    SharedComponentsModule,
-  ],
+  declarations: [PortfolioComponent, ProjectsComponent],
+  imports: [CommonModule, PortfolioRoutingModule, MatTabsModule, SharedModule],
 })
 export class PortfolioModule {}

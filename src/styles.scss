@@ -64,3 +64,8 @@ body {
 .text-upper {
   text-transform: uppercase;
 }
+
+.mat-button.mat-primary .mat-button-focus-overlay {
+  background-color: transparent !important;
+  color: red !important;
+}

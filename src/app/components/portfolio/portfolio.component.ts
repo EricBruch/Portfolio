@@ -34,7 +34,7 @@ export class PortfolioComponent implements OnInit {
       headline: 'Japanese Ramen Restaurant',
       description: `Sakura Ramen is a fictional japanese ramen restaurant. It was created to train proficient 
       skills in HTML & CSS. Additionally, the webside was created to be responsive for desktop, tablet and smartphone.`,
-      imgSrc: '/assets/pictures/sakuraRamen.jpg',
+      imgSrc: 'assets/pictures/sakuraRamen.jpg',
     };
     this.addToProjects(join, projectType.htmlCss);
   }
@@ -48,7 +48,7 @@ export class PortfolioComponent implements OnInit {
       description: `Winter Wonderland is a fictional webside of a city focused on winter toursim.
       The goal of the task was to build proficiency in vanilla JavaScript by creating custom JavaScript Features.
       Implemented Features are: a professional Image-slider, a picture gallery and list of activities to choose from.`,
-      imgSrc: '/assets/pictures/winterWonderland.jpg',
+      imgSrc: 'assets/pictures/winterWonderland.jpg',
     };
     let join: project = {
       name: 'Join',
@@ -58,7 +58,7 @@ export class PortfolioComponent implements OnInit {
       description: `Join is a task-management application based on the Eisenhower urgent / importance principle.
         The frontend of the application is created in vanilla JS/HTML/CSS. The backend is created
         with Firebase from Google.`,
-      imgSrc: '/assets/pictures/join.jpg',
+      imgSrc: 'assets/pictures/join.jpg',
     };
     this.addToProjects(winterWonderland, projectType.javascript);
     this.addToProjects(join, projectType.javascript);
@@ -71,7 +71,7 @@ export class PortfolioComponent implements OnInit {
       typeWritten: 'Angular',
       headline: `Simple Angular Webside`,
       description: `AngularFirst is a fictional simple webside that was created to get familiar with basic Angular concepts`,
-      imgSrc: '/assets/pictures/angularFirst.jpg',
+      imgSrc: 'assets/pictures/angularFirst.jpg',
     };
     let elPolloLocco: project = {
       name: 'El Pollo Locco',
@@ -82,7 +82,7 @@ export class PortfolioComponent implements OnInit {
         The hero has to jump over chickens and reach the end Boss in order to defeat 
         the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
         and a focus on Object-Oriented TypeScript.`,
-      imgSrc: '/assets/pictures/elPolloLocco.png',
+      imgSrc: 'assets/pictures/elPolloLocco.png',
     };
     let sadey: project = {
       name: 'Sadey',
@@ -95,7 +95,7 @@ export class PortfolioComponent implements OnInit {
       for one or several specific timeslots. Sadey was created with Angular & TypeScript, and
       AngularMaterial. It is responsive for desktop, tablet and smartphone. 
       For backend Firebase from Google was used.`,
-      imgSrc: '/assets/pictures/sadey.jpg',
+      imgSrc: 'assets/pictures/sadey.jpg',
     };
     this.addToProjects(sadey, projectType.angular);
     this.addToProjects(angularFirst, projectType.angular);

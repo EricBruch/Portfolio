@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
   constructor() {}
 
-  ericImgUrl: string = '/assets/pictures/eric_bruch.jpg';
+  ericImgUrl: string = 'assets/pictures/eric_bruch.jpg';
   heading_0: string = 'about';
   heading_1: string = 'portfolio'
 

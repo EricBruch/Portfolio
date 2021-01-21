@@ -9,6 +9,9 @@
   text-transform: uppercase;
   border-bottom: 4px solid green;
   margin-bottom: 8px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 
   .navItem {
     cursor: pointer;

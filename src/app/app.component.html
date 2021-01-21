@@ -1,8 +1,8 @@
-<ng-template [ngIf]="router.url==='/'">
+<ng-template [ngIf]="router.url !=='/about' && router.url !=='/portfolio'">
     <router-outlet></router-outlet>
 </ng-template>
 
-<ng-template [ngIf]="router.url!=='/'">
+<ng-template [ngIf]="router.url ==='/about' || router.url === '/portfolio'">
     <mat-drawer-container [hasBackdrop]="true">
         <!--    Sidebar content     -->
         <mat-drawer #sidebar [mode]="'over'">

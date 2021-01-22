@@ -1,28 +1,41 @@
-.skill {
-  --skillHeight: 20px;
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  min-height: 450px;
+  font-size: 1.1rem;
+}
 
+.skill {
+  --skillHeight: 30px;
   display: flex;
   position: relative;
   border-radius: 5px;
   margin-bottom: 16px;
   height: var(--skillHeight);
   width: 100%;
-  background-color: gray;
+  color: var(--darkBlue);
+  width: 100%;
 
   .skillLabel {
     width: 20%;
     height: var(--skillHeight);
     background-color: var(--white);
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .skillProgressBarContainer {
     height: var(--skillHeight);
     width: 70%;
+    background-color: rgba(2, 4, 60, 0.08);
 
     .skillProgressBar {
       height: var(--skillHeight);
       //   width: 10%;
-      background-color: blue;
+      background-color: var(--darkBlue);
     }
   }
 
@@ -30,5 +43,7 @@
     width: 10%;
     height: var(--skillHeight);
     background-color: var(--white);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
 }

@@ -8,14 +8,16 @@
     align-items: center;
     margin-top: 32px;
     margin-bottom: 32px;
+    font-size: 2.4rem;
   
     .sectionHeading {
-      margin-bottom: 5px;
+      margin-bottom: 10px;
+      color: var(--red);
     }
   
     .headerLine {
-      width: 20px;
+      width: 40px;
       height: 3px;
-      background-color: black;
+      background-color: var(--red);
     }
   }

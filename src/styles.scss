@@ -64,6 +64,9 @@ body {
   --white: #ffffff;
   --darkBlue: #02043c;
   --red: #c00;
+  --green: #06ac0c;
+
+  // --textSize: 2.4rem;
 }
 
 .text-center {
@@ -77,4 +80,10 @@ body {
 .mat-button.mat-primary .mat-button-focus-overlay {
   background-color: transparent !important;
   color: red !important;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

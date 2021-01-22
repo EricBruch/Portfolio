@@ -1,12 +1,12 @@
-<div *ngFor="let skill of skills">
-    <div class="skill text-center">
-        <div class="skillLabel">
+<div class="skillContainer">
+    <div *ngFor="let skill of skills" class="skill text-center">
+        <div class="skillLabel flex-center">
             {{ skill.label }}
         </div>
         <div class="skillProgressBarContainer">
             <div [style.width]="skill.skillLevel" class="skillProgressBar"></div>
         </div>
-        <div class="skillLevel">
+        <div class="skillLevel flex-center">
             {{ skill.skillLevel }}
         </div>
     </div>

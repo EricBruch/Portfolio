@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/about/skills/skills.component';
 import { SharedModule } from './components/sharedComponents/shared-components.module';
+import { PictogramsComponent } from './components/about/pictograms/pictograms.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SharedModule } from './components/sharedComponents/shared-components.mo
     PageNotFoundComponent,
     AboutComponent,
     SkillsComponent,
+    PictogramsComponent,
   ],
   imports: [
     BrowserModule,

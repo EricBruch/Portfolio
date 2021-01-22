@@ -1,31 +1,37 @@
-
 .pictogramsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+
+  .pictogramContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 16px;
-  
-    .pictogramContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    width: 16rem;
+    height: 24rem;
+
+    .pictogram {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 25%;
+      width: 6rem;
+      height: 6rem;
+      border: 2px solid white;
+      background-color: var(--darkBlue);
+      color: var(--white);
+      padding: 16px;
+    }
+
+    .textContainer {
+      height: 18rem;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 0.5rem;
-      text-align: center;
-      width: 18rem;
-      height: 18rem;
-  
-      .pictogram {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 25%;
-        width: 6rem;
-        height: 6rem;
-        border: 2px solid white;
-        background-color: var(--darkBlue);
-        color: var(--white);
-        padding: 16px;
-      }
+      justify-content: space-evenly;
     }
   }
+}

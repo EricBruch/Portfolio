@@ -1,7 +1,9 @@
 <app-section-heading [heading]="heading_0"></app-section-heading>
 
-<div class="animate__animated personContainer">
-    <div class="flex-column-center text-center">
+<div class="personContainer">
+    <div class="flex-column-center text-center" inViewport [inViewportOptions]="{ threshold: [1] }"
+        (inViewportAction)="onIntersection($event)"
+        [ngClass]="{'animate__animated animate__fadeInLeft': ericContVisible}">
         <img [src]="ericImgUrl" class="ericImg">
         <h3>Who's <span>Eric</span>?</h3>
         <p>

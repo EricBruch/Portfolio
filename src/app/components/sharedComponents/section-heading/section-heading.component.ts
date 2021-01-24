@@ -6,6 +6,7 @@ import {
   Renderer2,
   ViewChild,
 } from '@angular/core';
+import { intersection } from 'src/app/utils/types/intersection.type';
 
 @Component({
   selector: 'app-section-heading',
@@ -23,26 +24,16 @@ export class SectionHeadingComponent implements OnInit {
 
   public headlineContainerVisible: boolean = false;
 
-  ngOnInit(): void {
-    // setInterval(() => {
-    //   console.log(this.headlineContainerVisible);
-    // }, 500);
-  }
+  ngOnInit(): void {}
 
-  onIntersection({
-    target,
-    visible,
-  }: {
-    target: Element;
-    visible: boolean;
-  }): void {
+  onIntersection({ target, visible }: intersection): void {
     if (!this.headlineContainerVisible && visible) {
       this.headlineContainerVisible = true;
       console.log('fg');
-      
+
       // this.renderer.removeClass(target, 'invisible');
       // target.
-      this.renderer.addClass(target, 'moveIn');
+      //this.renderer.addClass(target, 'moveIn');
     }
   }
 }

@@ -1,5 +1,7 @@
 <div class="skillContainer">
-    <div *ngFor="let skill of skills" class="skill text-center">
+    <div *ngFor="let skill of skills; index as i" inViewport
+        [inViewportOptions]="{ threshold: [1] }" (inViewportAction)="onIntersection($event, i)"
+        class="skill text-center invisible">
         <div class="skillLabel flex-center">
             {{ skill.label }}
         </div>
@@ -10,4 +12,5 @@
             {{ skill.skillLevel }}
         </div>
     </div>
+    <!--     [ngClass]="{'animate__animated animate__fadeInLeft': ericContVisible}"  -->
 </div>

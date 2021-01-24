@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { intersection } from 'src/app/utils/types/intersection.type';
 
 @Component({
   selector: 'app-skills',
@@ -7,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   constructor() {}
+
+  skillTime: number = 0;
+  skillsAnimated: boolean = false;
+  skillsShown: number = 0;
 
   skillLevel: string = '80%';
   label: string = 'JavaScript';
@@ -47,4 +52,13 @@ export class SkillsComponent implements OnInit {
   ];
 
   ngOnInit(): void {}
+
+  onIntersection({ target, visible }: intersection, i: number) {
+    setTimeout(() => {
+      target.classList.add('animate__animated');
+      target.classList.add('animate__fadeInRight');
+    }, this.skillTime);
+    this.skillTime += 200;
+    this.skillsShown++;
+  }
 }

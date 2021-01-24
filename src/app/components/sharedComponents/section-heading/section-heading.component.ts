@@ -29,8 +29,6 @@ export class SectionHeadingComponent implements OnInit {
   onIntersection({ target, visible }: intersection): void {
     if (!this.headlineContainerVisible && visible) {
       this.headlineContainerVisible = true;
-      console.log('fg');
-
       // this.renderer.removeClass(target, 'invisible');
       // target.
       //this.renderer.addClass(target, 'moveIn');

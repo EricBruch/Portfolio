@@ -1,6 +1,10 @@
 <div class="pictogramsContainer">
 
-    <div class="pictogramContainer">
+    <div class="pictogramContainer invisible" #pictogram1 inViewport [inViewportOptions]="{  threshold: [1] }"
+        (inViewportAction)="onIntersectionPicto1($event)"
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram1Visible}"
+        [class.invisible]="pictogram1Hidden"
+        >
         <figure class="pictogram">
             <img src="assets/pictures/icons/graduation-cap.png">
         </figure>
@@ -12,7 +16,10 @@
         </div>
     </div>
 
-    <div class="pictogramContainer">
+    <div class="pictogramContainer invisble" #pictogram2 inViewport [inViewportOptions]="{ threshold: [1] }"
+        (inViewportAction)="onIntersectionPicto2($event)"
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram2Visible}"
+        [class.invisible]="pictogram2Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/bug.png">
         </figure>
@@ -28,7 +35,10 @@
         </div>
     </div>
 
-    <div class="pictogramContainer">
+    <div class="pictogramContainer" #pictogram3 inViewport [inViewportOptions]="{ threshold: [1] }"
+        (inViewportAction)="onIntersectionPicto3($event)"
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram3Visible}"
+        [class.invisible]="pictogram3Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/laptop.png">
         </figure>
@@ -44,7 +54,10 @@
         </div>
     </div>
 
-    <div class="pictogramContainer">
+    <div class="pictogramContainer" inViewport [inViewportOptions]="{ threshold: [1] }"
+        (inViewportAction)="onIntersectionPicto4($event)"
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram4Visible}"
+        [class.invisible]="pictogram4Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/rocket.png">
         </figure>

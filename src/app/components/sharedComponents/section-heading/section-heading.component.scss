@@ -1,23 +1,40 @@
-/*
-  Section Header
-*/
+.invisible {
+  opacity: 0;
+}
 
 .sectionHeadingContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    font-size: 2.4rem;
-  
-    .sectionHeading {
-      margin-bottom: 10px;
-      color: var(--red);
-    }
-  
-    .headerLine {
-      width: 40px;
-      height: 3px;
-      background-color: var(--red);
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 2.4rem;
+
+  .sectionHeading {
+    margin-bottom: 10px;
+    color: var(--red);
   }
+
+  .headerLine {
+    width: 40px;
+    height: 3px;
+    background-color: var(--red);
+  }
+}
+
+.moveIn {
+  // margin-top: 200px !important;
+  opacity: 1 !important;
+  // transition: opacity 1s ease-in-out;
+  // animation-name: myAnimation;
+  // animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+  from {
+    background-color: orange;
+  }
+  to {
+    background-color: green;
+  }
+}

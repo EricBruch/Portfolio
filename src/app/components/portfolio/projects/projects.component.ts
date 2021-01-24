@@ -12,6 +12,6 @@ export class ProjectsComponent implements OnInit {
   @Input() projects: project[] = [];
 
   ngOnInit(): void {
-    console.log(this.projects);
+    // console.log(this.projects);
   }
 }

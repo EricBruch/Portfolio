@@ -1,6 +1,5 @@
-<div>
-    <div class="sectionHeadingContainer">
-        <h1 class="sectionHeading text-upper" id="about">{{ heading }}</h1>
-        <div class="headerLine"></div>
-    </div>
+<div #headlineContainer inViewport [inViewportOptions]="{ threshold: [1] }" (inViewportAction)="onIntersection($event)"
+    class="  sectionHeadingContainer" [ngClass]="{'animate__animated animate__fadeInLeft': headlineContainerVisible}">
+    <h1 class="sectionHeading text-upper" id="about">{{ heading }}</h1>
+    <div class="headerLine"></div>
 </div>

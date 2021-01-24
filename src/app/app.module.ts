@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SkillsComponent } from './components/about/skills/skills.component';
 import { SharedModule } from './components/sharedComponents/shared-components.module';
 import { PictogramsComponent } from './components/about/pictograms/pictograms.component';
+import { InViewportModule } from 'ng-in-viewport';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PictogramsComponent } from './components/about/pictograms/pictograms.co
     MatSidenavModule,
     SharedModule,
     MatIconModule,
+    InViewportModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

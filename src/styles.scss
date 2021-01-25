@@ -96,3 +96,44 @@ body {
 .padding-16 {
   padding: 16px;
 }
+
+.margin-top-16 {
+  margin-top: 16px;
+}
+
+.margin-bot-8 {
+  margin-bottom: 8px;
+}
+
+.darkBlueTxt {
+  color: var(--darkBlue);
+}
+
+.whiteTxt {
+  color: var(--white);
+}
+
+.redTxt {
+  color: var(--red);
+}
+
+.redUnderline {
+  width: 40px;
+  height: 3px;
+  background-color: var(--red);
+}
+
+.btnBorderRadius {
+  border-radius: 10px;
+}
+
+.btn {
+  border: 1px solid var(--white);
+  background-color: var(--darkBlue);
+  color: var(--white);
+  border-radius: 10px;
+
+  &:hover {
+    color: var(--red);
+  }
+}

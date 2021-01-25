@@ -82,7 +82,7 @@ export class PortfolioComponent implements OnInit {
         The hero has to jump over chickens and reach the end Boss in order to defeat 
         the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
         and a focus on Object-Oriented TypeScript.`,
-      imgSrc: 'assets/pictures/elPolloLocco.png',
+      imgSrc: 'assets/pictures/elPolloLoco.jpg',
     };
     let sadey: project = {
       name: 'Sadey',

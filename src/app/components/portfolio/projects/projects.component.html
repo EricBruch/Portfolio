@@ -1,19 +1,20 @@
-<div *ngFor="let project of projects">
+<div class="projectContainer darkBlueTxt" *ngFor="let project of projects">
     <h3 class="headline">{{ project.name }} - {{ project.headline }}</h3>
-    <div class="ProjectContentContainer">
+    <div class="ProjectContent">
         <figure class="figureContainer">
-            <img src="{{ project.imgSrc }}" class="img">
+            <img src="{{ project.imgSrc }}">
             <div class="imgOverlay">
-                <p class="overlayTxt">{{ project.name }} - {{ project.typeWritten }}</p>
-                <div class="underline"></div>
-                <button class="overlayBtn" matRipple>Try it Yourself!</button>
+                <p class="overlayTxt redTxt">{{ project.name }} - {{ project.typeWritten }}</p>
+                <div class="redUnderline margin-bot-8"></div>
+                <button mat-flat-button class="btn">Try it Yourself!</button>
             </div>
         </figure>
+
         <div class="projectDescriptionContainer">
             <p class="projectDescription">
                 {{ project.description }}
             </p>
-            <div class="actionBtn">
+            <div class="actionBtn btnBorderRadius">
                 <button mat-flat-button>Try it Yourself!</button>
             </div>
 

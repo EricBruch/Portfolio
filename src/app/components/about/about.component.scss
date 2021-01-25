@@ -38,3 +38,11 @@
   align-items: center;
 }
 
+.pictograms {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .app-pictograms {
+    width: 100%;
+  }
+}

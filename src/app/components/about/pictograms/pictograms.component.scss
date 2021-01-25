@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 16px;
+  max-width: 81rem;
 
   .pictogramContainer {
     display: flex;
@@ -12,7 +13,7 @@
     padding: 0.5rem;
     text-align: center;
     width: 16rem;
-    height: 24rem;
+    //height: 24rem;
 
     .pictogram {
       display: flex;
@@ -28,10 +29,19 @@
     }
 
     .textContainer {
-      height: 18rem;
+      // height: 18rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+
+      h3 {
+        height: 6rem;
+        margin-bottom: 0px;
+      }
+
+      p {
+        height: 10rem;
+        margin-bottom: 0px;
+      }
     }
   }
 }

@@ -2,9 +2,7 @@
 
     <div class="pictogramContainer invisible" #pictogram1 inViewport [inViewportOptions]="{  threshold: [1] }"
         (inViewportAction)="onIntersectionPicto1($event)"
-        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram1Visible}"
-        [class.invisible]="pictogram1Hidden"
-        >
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram1Visible}" [class.invisible]="pictogram1Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/graduation-cap.png">
         </figure>
@@ -12,14 +10,15 @@
             <h3>
                 Graduation M.Sc. in Information Systems
             </h3>
-            <p>Getting a theoretical understanding of the business world and IT systems </p>
+            <p>Getting a theoretical understanding of the business world and IT systems. I chose a specialisation in
+                Engineering and worked in my master thesis with flask to create a mvp of an open data quiz application
+            </p>
         </div>
     </div>
 
     <div class="pictogramContainer invisble" #pictogram2 inViewport [inViewportOptions]="{ threshold: [1] }"
         (inViewportAction)="onIntersectionPicto2($event)"
-        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram2Visible}"
-        [class.invisible]="pictogram2Hidden">
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram2Visible}" [class.invisible]="pictogram2Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/bug.png">
         </figure>
@@ -37,8 +36,7 @@
 
     <div class="pictogramContainer" #pictogram3 inViewport [inViewportOptions]="{ threshold: [1] }"
         (inViewportAction)="onIntersectionPicto3($event)"
-        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram3Visible}"
-        [class.invisible]="pictogram3Hidden">
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram3Visible}" [class.invisible]="pictogram3Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/laptop.png">
         </figure>
@@ -49,15 +47,14 @@
             <p>
                 I joined a professional coding academy to improve my coding skills focusing on Web Development with HTML
                 /
-                CSS / JS and Angular
+                CSS / JS and Angular.
             </p>
         </div>
     </div>
 
     <div class="pictogramContainer" inViewport [inViewportOptions]="{ threshold: [1] }"
         (inViewportAction)="onIntersectionPicto4($event)"
-        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram4Visible}"
-        [class.invisible]="pictogram4Hidden">
+        [ngClass]="{'animate__animated animate__fadeInLeft': pictogram4Visible}" [class.invisible]="pictogram4Hidden">
         <figure class="pictogram">
             <img src="assets/pictures/icons/rocket.png">
         </figure>
@@ -66,7 +63,8 @@
                 Creation of a hands-on portfolio
             </h3>
             <p>
-                To improve my skills I created a number of real world applications that can be seen in my portfolio.
+                To improve my coding skills I trained on real practical projects. The applications that I created can be
+                seen in my portfolio with a description.
             </p>
         </div>
     </div>

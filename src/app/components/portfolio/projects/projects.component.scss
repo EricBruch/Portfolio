@@ -9,7 +9,9 @@
 
 .ProjectContent {
   display: flex;
+  flex-wrap: wrap;
   --transitionTime: 0.3s;
+  padding-bottom: 16px;
 }
 
 .figureContainer {
@@ -67,7 +69,7 @@
 }
 
 .projectDescriptionContainer {
-  width: 100%;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -91,5 +93,21 @@
         color: var(--red);
       }
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+  }
+  .ProjectContent {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: initial;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { projectType } from 'src/app/utils/enums/projectType.enum';
 import { project } from 'src/app/utils/types/project.type';
 import { projects } from 'src/app/utils/types/projects.type';
@@ -7,6 +7,7 @@ import { projects } from 'src/app/utils/types/projects.type';
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PortfolioComponent implements OnInit {
   constructor() {}

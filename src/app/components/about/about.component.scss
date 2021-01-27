@@ -4,6 +4,8 @@
 
 .personSkillContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   color: var(--darkBlue);

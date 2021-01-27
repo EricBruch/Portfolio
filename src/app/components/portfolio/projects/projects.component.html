@@ -1,5 +1,5 @@
-<div class="projectContainer darkBlueTxt" *ngFor="let project of projects">
-    <h3 class="headline">{{ project.name }} - {{ project.headline }}</h3>
+<div class="projectContainer" *ngFor="let project of projects">
+    <h3 class="headline darkBlueTxt">{{ project.name }} - {{ project.headline }}</h3>
     <div class="ProjectContent">
         <figure class="figureContainer">
             <img src="{{ project.imgSrc }}">
@@ -11,7 +11,7 @@
         </figure>
 
         <div class="projectDescriptionContainer">
-            <p class="projectDescription">
+            <p class="projectDescription darkBlueTxt">
                 {{ project.description }}
             </p>
             <div class="actionBtn btnBorderRadius">

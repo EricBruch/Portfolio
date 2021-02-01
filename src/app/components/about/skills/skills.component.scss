@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  font-size: 1.0rem;
+  font-size: 1rem;
   max-width: 55rem;
   width: auto;
 }
@@ -49,6 +49,10 @@
 
 @media only screen and (max-width: 600px) {
   .skillContainer {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+  }
+
+  .m-q-display {
+    display: none;
   }
 }

@@ -5,11 +5,19 @@
 <ng-template [ngIf]="router.url ==='/about' || router.url === '/portfolio'">
     <mat-drawer-container [hasBackdrop]="true">
         <!--    Sidebar content     -->
-        <mat-drawer #sidebar [mode]="'over'">
-            <p>Hello I'm there</p>
-            <a mat-raised-button routerLink="/">Landing</a>
-            <a mat-raised-button routerLink="/about">About</a>
-            <a mat-raised-button routerLink="/portfolio">About</a>
+        <mat-drawer #sidebar [mode]="'over'" class="sidebarContainer">
+            <div class="home backgroundDarkBlue navBarUnderline navBarHeight">
+                <button routerLink="/" mat-icon-button aria-label="home-button">
+                    <mat-icon>home</mat-icon>
+                </button>
+            </div>
+            <div class="sidebarNavItems">
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button routerLink="/about">About</a>
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
+                    routerLink="/portfolio">Portfolio</a>
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
+                    routerLink="/portfolio">Contact</a>
+            </div>
         </mat-drawer>
 
         <!--    Content mat-drawer  -->
@@ -17,7 +25,7 @@
 
             <!--    navbar  -->
             <div class="bigView">
-                <nav class="navBar flex-center">
+                <nav class="navBar navBarUnderline navBarHeight flex-center">
                     <a routerLink="/" class="navItem">home</a>
                     <a routerLink="/about" class="navItem">about</a>
                     <a routerLink="/portfolio" class="navItem">portfolio</a>
@@ -26,7 +34,7 @@
             </div>
 
             <div class="smallView">
-                <nav class="navBar flex-center-right">
+                <nav class="navBar navBarHeight navBarUnderline flex-center-right">
                     <button class="smallView" mat-icon-button (click)="sidebar.toggle()">
                         <mat-icon>menu</mat-icon>
                     </button>

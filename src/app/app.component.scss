@@ -1,13 +1,29 @@
-/*
-  Navbar
-*/
+.sidebarContainer {
+  min-width: 30vw;
+
+  .home {
+    color: var(--white);
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sidebarNavItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebarNavItem {
+    width: 5rem;
+    margin: 16px;
+  }
+}
 
 .navBar {
-  background-color: #02043c;
-  color: white;
-  height: 5vh;
+  background-color: var(--darkBlue);
+  color: var(--white);
   text-transform: uppercase;
-  border-bottom: 4px solid var(--darkcyan);
   margin-bottom: 8px;
   position: fixed;
   width: 100%;
@@ -19,6 +35,14 @@
     text-decoration: unset;
     color: var(--white);
   }
+}
+
+.navBarUnderline {
+  border-bottom: 4px solid var(--darkcyan);
+}
+
+.navBarHeight {
+  height: 5vh;
 }
 
 .bigView {
@@ -58,5 +82,15 @@ a:hover {
     margin: 0 auto;
     max-width: 1400px;
     // background-clip: content-box;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bigView {
+    display: none;
+  }
+
+  .smallView {
+    display: initial;
   }
 }

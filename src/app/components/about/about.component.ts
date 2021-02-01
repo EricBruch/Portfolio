@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ERIC_IMG_SRC } from 'src/app/utils/constants/ERIC_IMG_SRC';
 import { intersection } from 'src/app/utils/types/intersection.type';
 
 @Component({
@@ -9,9 +10,8 @@ import { intersection } from 'src/app/utils/types/intersection.type';
 export class AboutComponent implements OnInit {
   constructor() {}
 
-  ericImgUrl: string = 'assets/pictures/eric_bruch.jpg';
+  ericImgUrl: string = ERIC_IMG_SRC;
   heading_0: string = 'about';
-  heading_1: string = 'portfolio';
 
   ericContVisible: boolean = true;
 

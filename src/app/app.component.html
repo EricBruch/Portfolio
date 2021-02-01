@@ -1,8 +1,8 @@
-<ng-template [ngIf]="router.url !=='/about' && router.url !=='/portfolio'">
+<ng-template [ngIf]="router.url !=='/about' && router.url !=='/portfolio' && router.url !=='/contact'">
     <router-outlet></router-outlet>
 </ng-template>
 
-<ng-template [ngIf]="router.url ==='/about' || router.url === '/portfolio'">
+<ng-template [ngIf]="router.url ==='/about' || router.url === '/portfolio' || router.url === '/contact'">
     <mat-drawer-container [hasBackdrop]="true">
         <!--    Sidebar content     -->
         <mat-drawer #sidebar [mode]="'over'" class="sidebarContainer">
@@ -17,7 +17,7 @@
                 <a class="sidebarNavItem backgroundDarkBlue whiteTxt" [class.redTxt]="isPortfolio" mat-raised-button
                     routerLink="/portfolio">Portfolio</a>
                 <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
-                    routerLink="/portfolio">Contact</a>
+                    routerLink="/contact">Contact</a>
             </div>
         </mat-drawer>
 
@@ -30,7 +30,7 @@
                     <a routerLink="/" class="navItem">home</a>
                     <a routerLink="/about" class="navItem" [class.redTxt]="isAbout">about</a>
                     <a routerLink="/portfolio" class="navItem" [class.redTxt]="isPortfolio">portfolio</a>
-                    <a class="navItem">contact</a>
+                    <a routerLink="/contact" class="navItem">contact</a>
                 </nav>
             </div>
 

@@ -1,0 +1,31 @@
+.bgContainer {
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ericImg {
+  width: 200px;
+  border-radius: 20%;
+}
+
+.email {
+  vertical-align: text-bottom;
+}
+
+.links {
+  display: flex;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  border: 2px solid white;
+  width: 6rem;
+  height: 6rem;
+}

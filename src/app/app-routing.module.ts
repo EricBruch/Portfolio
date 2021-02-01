@@ -13,6 +13,11 @@ const routes: Routes = [
         (m) => m.PortfolioModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact.module').then((m) => m.ContactModule),
+  },
   { path: '**', component: LandingComponent },
 ];
 

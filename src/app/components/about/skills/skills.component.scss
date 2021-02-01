@@ -9,11 +9,11 @@
 }
 
 .skill {
-  --skillHeight: 1.7rem;
+  --skillHeight: 2rem;
   display: flex;
   position: relative;
   border-radius: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
   height: var(--skillHeight);
   color: var(--darkBlue);
 
@@ -44,5 +44,11 @@
     background-color: var(--white);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skillContainer {
+    font-size: 0.9rem;
   }
 }

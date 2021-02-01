@@ -1,6 +1,6 @@
 <div class="pictogramsContainer">
 
-    <div class="pictogramContainer invisible" #pictogram1 inViewport [inViewportOptions]="{  threshold: [1] }"
+    <div class="pictogramContainer invisible" #pictogram1 inViewport [inViewportOptions]="{  threshold: [0.1] }"
         (inViewportAction)="onIntersectionPicto1($event)"
         [ngClass]="{'animate__animated animate__fadeInLeft': pictogram1Visible}" [class.invisible]="pictogram1Hidden">
         <figure class="pictogram">

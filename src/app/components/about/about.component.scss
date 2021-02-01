@@ -35,7 +35,7 @@
   .skillsContainer {
     max-width: 60rem;
     width: 90%;
-    min-width: 40rem;
+    min-width: 10rem;
     padding: 32px;
   }
 }
@@ -52,5 +52,15 @@
   justify-content: space-around;
   .app-pictograms {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .ericImg {
+    width: 200px !important;
+  }
+
+  .personContainer {
+    width: 280px;
   }
 }

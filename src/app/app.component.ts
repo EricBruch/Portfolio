@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Event, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,21 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   constructor(public router: Router) {
-    console.log('router', this.router, this.router.url);
+    this.router.events.subscribe((event) => {
+      this.hightlightCurrentRoute(event);
+    });
   }
-  title = 'ericPortfolio';
+
+  isAbout: boolean = false;
+  isPortfolio: boolean = false;
+  isContact: boolean = false;
+
+  hightlightCurrentRoute(event: Event) {
+    if (event instanceof NavigationEnd) {
+      console.log('navigationEnd');
+      console.log(event.urlAfterRedirects);
+      this.isAbout = event.urlAfterRedirects === '/about';
+      this.isPortfolio = event.urlAfterRedirects === '/portfolio';
+    }
+  }
 }

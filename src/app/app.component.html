@@ -12,8 +12,9 @@
                 </button>
             </div>
             <div class="sidebarNavItems">
-                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button routerLink="/about">About</a>
-                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" [class.redTxt]="isAbout" mat-raised-button
+                    routerLink="/about">About</a>
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" [class.redTxt]="isPortfolio" mat-raised-button
                     routerLink="/portfolio">Portfolio</a>
                 <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
                     routerLink="/portfolio">Contact</a>
@@ -27,8 +28,8 @@
             <div class="bigView">
                 <nav class="navBar navBarUnderline navBarHeight flex-center">
                     <a routerLink="/" class="navItem">home</a>
-                    <a routerLink="/about" class="navItem">about</a>
-                    <a routerLink="/portfolio" class="navItem">portfolio</a>
+                    <a routerLink="/about" class="navItem" [class.redTxt]="isAbout">about</a>
+                    <a routerLink="/portfolio" class="navItem" [class.redTxt]="isPortfolio">portfolio</a>
                     <a class="navItem">contact</a>
                 </nav>
             </div>

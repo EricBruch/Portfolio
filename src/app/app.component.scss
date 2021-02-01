@@ -65,6 +65,10 @@
   }
 }
 
+.redTxt {
+  color: var(--red) !important;
+}
+
 a:hover {
   color: var(--red) !important;
   // background-color: var(--darkBlue);

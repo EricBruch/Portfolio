@@ -22,35 +22,19 @@ export class PortfolioComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.createHtmlCssProjects();
-    this.createJavaScriptProjects();
-    this.createAngularProjects();
+    this.createProjects();
   }
 
-  createHtmlCssProjects() {
-    let join: project = {
-      name: 'Sakura Ramen',
-      type: projectType.htmlCss,
-      typeWritten: 'HTML & CSS',
-      headline: 'Japanese Ramen Restaurant',
-      description: `Sakura Ramen is a fictional japanese ramen restaurant. It was created to train proficient 
-      skills in HTML & CSS. Additionally, the webside was created to be responsive for desktop, tablet and smartphone.`,
-      imgSrc: 'assets/pictures/sakuraRamen.jpg',
-    };
-    this.addToProjects(join, projectType.htmlCss);
+  createProjects() {
+    this.createSadey();
+    this.createElPolloLoco();
+    this.createJoin();
+    this.createWinterWonderLand();
+    this.createAngularFirst();
+    this.createSakuraRamen();
   }
 
-  createJavaScriptProjects() {
-    let winterWonderland: project = {
-      name: 'WinterWonderland',
-      type: projectType.javascript,
-      typeWritten: 'JavaScript',
-      headline: 'Custom created JS Features',
-      description: `Winter Wonderland is a fictional webside of a city focused on winter toursim.
-      The goal of the task was to build proficiency in vanilla JavaScript by creating custom JavaScript Features.
-      Implemented Features are: a professional Image-slider, a picture gallery and list of activities to choose from.`,
-      imgSrc: 'assets/pictures/winterWonderland.jpg',
-    };
+  createJoin() {
     let join: project = {
       name: 'Join',
       type: projectType.javascript,
@@ -61,30 +45,10 @@ export class PortfolioComponent implements OnInit {
         with Firebase from Google.`,
       imgSrc: 'assets/pictures/join.jpg',
     };
-    this.addToProjects(winterWonderland, projectType.javascript);
     this.addToProjects(join, projectType.javascript);
   }
 
-  createAngularProjects() {
-    let angularFirst: project = {
-      name: 'AngularFirst',
-      type: projectType.angular,
-      typeWritten: 'Angular',
-      headline: `Simple Angular Webside`,
-      description: `AngularFirst is a fictional simple webside that was created to get familiar with basic Angular concepts`,
-      imgSrc: 'assets/pictures/angularFirst.jpg',
-    };
-    let elPolloLocco: project = {
-      name: 'El Pollo Locco',
-      type: projectType.angular,
-      typeWritten: 'Angular',
-      headline: `2-D Mexican Jump 'n Run`,
-      description: `El Pollo Locco is a 2-D Jump 'n Run game designed in mexican style. 
-        The hero has to jump over chickens and reach the end Boss in order to defeat 
-        the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
-        and a focus on Object-Oriented TypeScript.`,
-      imgSrc: 'assets/pictures/elPolloLoco.jpg',
-    };
+  createSadey() {
     let sadey: project = {
       name: 'Sadey',
       type: projectType.angular,
@@ -99,8 +63,60 @@ export class PortfolioComponent implements OnInit {
       imgSrc: 'assets/pictures/sadey.jpg',
     };
     this.addToProjects(sadey, projectType.angular);
-    this.addToProjects(angularFirst, projectType.angular);
+  }
+
+  createElPolloLoco() {
+    let elPolloLocco: project = {
+      name: 'El Pollo Locco',
+      type: projectType.angular,
+      typeWritten: 'Angular',
+      headline: `2-D Mexican Jump 'n Run`,
+      description: `El Pollo Locco is a 2-D Jump 'n Run game designed in mexican style. 
+        The hero has to jump over chickens and reach the end Boss in order to defeat 
+        the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
+        and a focus on Object-Oriented TypeScript.`,
+      imgSrc: 'assets/pictures/elPolloLoco.jpg',
+    };
     this.addToProjects(elPolloLocco, projectType.angular);
+  }
+
+  createSakuraRamen() {
+    let join: project = {
+      name: 'Sakura Ramen',
+      type: projectType.htmlCss,
+      typeWritten: 'HTML & CSS',
+      headline: 'Japanese Ramen Restaurant',
+      description: `Sakura Ramen is a fictional japanese ramen restaurant. It was created to train proficient 
+      skills in HTML & CSS. Additionally, the webside was created to be responsive for desktop, tablet and smartphone.`,
+      imgSrc: 'assets/pictures/sakuraRamen.jpg',
+    };
+    this.addToProjects(join, projectType.htmlCss);
+  }
+
+  createWinterWonderLand() {
+    let winterWonderland: project = {
+      name: 'WinterWonderland',
+      type: projectType.javascript,
+      typeWritten: 'JavaScript',
+      headline: 'Custom created JS Features',
+      description: `Winter Wonderland is a fictional webside of a city focused on winter toursim.
+      The goal of the task was to build proficiency in vanilla JavaScript by creating custom JavaScript Features.
+      Implemented Features are: a professional Image-slider, a picture gallery and list of activities to choose from.`,
+      imgSrc: 'assets/pictures/winterWonderland.jpg',
+    };
+    this.addToProjects(winterWonderland, projectType.javascript);
+  }
+
+  createAngularFirst() {
+    let angularFirst: project = {
+      name: 'AngularFirst',
+      type: projectType.angular,
+      typeWritten: 'Angular',
+      headline: `Simple Angular Webside`,
+      description: `AngularFirst is a fictional simple webside that was created to get familiar with basic Angular concepts`,
+      imgSrc: 'assets/pictures/angularFirst.jpg',
+    };
+    this.addToProjects(angularFirst, projectType.angular);
   }
 
   addToProjects(p: project, type: projectType) {

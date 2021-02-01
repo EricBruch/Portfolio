@@ -21,16 +21,23 @@
     align-items: center;
     // font-size: 2.5rem;
     color: var(--white);
-
-    .text {
-      padding: 12px;
-      background-color: var(--darkBlue);
-      .nameColor {
-        color: var(--red);
-        // font-size: 3rem;
-      }
-    }
   }
 }
-//  dark blue: #02043c
-//  red: #c00
+
+.nameTxt {
+  margin: 0px;
+  overflow-wrap: break-word;
+  line-height: 2.4rem;
+}
+
+.devTxt {
+  background-color: var(--darkBlue);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+}

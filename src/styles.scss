@@ -70,17 +70,33 @@ body {
   // --textSize: 2.4rem;
 }
 
+.darkBlueTxt {
+  color: var(--darkBlue);
+}
+
+.whiteTxt {
+  color: var(--white);
+}
+
+.redTxt {
+  color: var(--red);
+}
+
+.backgroundDarkBlue {
+  background-color: var(--darkBlue) !important;
+}
+
+.mat-button.mat-primary .mat-button-focus-overlay {
+  background-color: transparent !important;
+  color: red !important;
+}
+
 .text-center {
   text-align: center;
 }
 
 .text-upper {
   text-transform: uppercase;
-}
-
-.mat-button.mat-primary .mat-button-focus-overlay {
-  background-color: transparent !important;
-  color: red !important;
 }
 
 .flex-center {
@@ -97,6 +113,10 @@ body {
   padding: 16px;
 }
 
+.margin-8 {
+  margin: 8px !important;
+}
+
 .margin-top-16 {
   margin-top: 16px;
 }
@@ -105,17 +125,6 @@ body {
   margin-bottom: 8px;
 }
 
-.darkBlueTxt {
-  color: var(--darkBlue);
-}
-
-.whiteTxt {
-  color: var(--white);
-}
-
-.redTxt {
-  color: var(--red);
-}
 
 .redUnderline {
   width: 40px;

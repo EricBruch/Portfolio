@@ -22,11 +22,11 @@
         </mat-drawer>
 
         <!--    Content mat-drawer  -->
-        <mat-drawer-content class="matDrawerContent">
+        <mat-drawer-content>
 
             <!--    navbar  -->
             <div class="bigView">
-                <nav class="navBar navBarUnderline navBarHeight flex-center">
+                <nav class="navBar navBarUnderline navBarHeight backgroundDarkBlue whiteTxt flex-center">
                     <a routerLink="/" class="navItem">home</a>
                     <a routerLink="/about" class="navItem" [class.redTxt]="isAbout">about</a>
                     <a routerLink="/portfolio" class="navItem" [class.redTxt]="isPortfolio">portfolio</a>
@@ -35,13 +35,16 @@
             </div>
 
             <div class="smallView">
-                <nav class="navBar navBarHeight navBarUnderline flex-center-right">
+                <nav class="navBar navBarHeight navBarUnderline backgroundDarkBlue whiteTxt flex-center-right">
                     <button class="smallView" mat-icon-button (click)="sidebar.toggle()">
                         <mat-icon>menu</mat-icon>
                     </button>
                 </nav>
             </div>
+
             <!-- ############  -->
+
+            <div class="navBarDummy"></div>
             <div class="BgContainer">
                 <div class="sectionContainer">
                     <router-outlet></router-outlet>

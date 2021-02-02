@@ -13,17 +13,14 @@ export class SkillsComponent implements OnInit {
   skillsAnimated: boolean = false;
   skillsShown: number = 0;
 
-  skillLevel: string = '80%';
-  label: string = 'JavaScript';
-
   skills = [
     {
       label: 'HTML',
-      skillLevel: '80%',
+      skillLevel: '90%',
     },
     {
       label: 'CSS',
-      skillLevel: '80%',
+      skillLevel: '90%',
     },
     {
       label: 'JavaScript',
@@ -31,7 +28,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       label: 'Angular',
-      skillLevel: '60%',
+      skillLevel: '70%',
     },
     {
       label: 'Postgres',

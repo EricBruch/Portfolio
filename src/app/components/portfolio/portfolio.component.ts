@@ -55,9 +55,9 @@ export class PortfolioComponent implements OnInit {
       type: projectType.angular,
       typeWritten: 'Angular',
       headline: `MVP of a platform to book locations for events`,
-      description: `Sadey is a MVP product of a event booking location. 
+      description: `Sadey is MVP product of a event booking location. 
       It offers the possibility for location providers to showcase locations 
-      to eventler. Eventler, can inspect locations and choose to book locations
+      to eventler. Eventler can inspect locations and choose to book locations
       for one or several specific timeslots. Sadey was created with Angular & TypeScript, and
       AngularMaterial. It is responsive for desktop, tablet and smartphone. 
       For backend Firebase from Google was used.`,
@@ -73,7 +73,7 @@ export class PortfolioComponent implements OnInit {
       type: projectType.angular,
       typeWritten: 'Angular',
       headline: `2-D Mexican Jump 'n Run`,
-      description: `El Pollo Locco is a 2-D Jump 'n Run game designed in mexican style. 
+      description: `El Pollo Locco is a 2-D Jump 'n Run game designed in Mexican style. 
         The hero has to jump over chickens and reach the end Boss in order to defeat 
         the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
         and a focus on Object-Oriented TypeScript.`,
@@ -89,8 +89,8 @@ export class PortfolioComponent implements OnInit {
       type: projectType.htmlCss,
       typeWritten: 'HTML & CSS',
       headline: 'Japanese Ramen Restaurant',
-      description: `Sakura Ramen is a fictional japanese ramen restaurant. It was created to train proficient 
-      skills in HTML & CSS. Additionally, the webside was created to be responsive for desktop, tablet and smartphone.`,
+      description: `Sakura Ramen is a fictional Japanese ramen restaurant. It was created to train proficient 
+      skills in HTML & CSS. Additionally, the website was created to be responsive for desktop, tablet and smartphone.`,
       imgSrc: 'assets/pictures/sakuraRamen.jpg',
       url: 'http://eric-bruch.developerakademie.com/Sakura_Ramen/',
     };
@@ -103,7 +103,7 @@ export class PortfolioComponent implements OnInit {
       type: projectType.javascript,
       typeWritten: 'JavaScript',
       headline: 'Custom created JS Features',
-      description: `Winter Wonderland is a fictional webside of a city focused on winter toursim.
+      description: `Winter Wonderland is a fictional websie of a city focused on winter tourism.
       The goal of the task was to build proficiency in vanilla JavaScript by creating custom JavaScript Features.
       Implemented Features are: a professional Image-slider, a picture gallery and list of activities to choose from.`,
       imgSrc: 'assets/pictures/winterWonderland.jpg',
@@ -118,7 +118,7 @@ export class PortfolioComponent implements OnInit {
       type: projectType.angular,
       typeWritten: 'Angular',
       headline: `Simple Angular Webside`,
-      description: `AngularFirst is a fictional simple webside that was created to get familiar with basic Angular concepts`,
+      description: `AngularFirst is a fictional simple website that was created to get familiar with basic Angular concepts`,
       imgSrc: 'assets/pictures/angularFirst.jpg',
       url: 'http://eric-bruch.developerakademie.com/angularFirstApp/',
     };

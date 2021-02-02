@@ -2,10 +2,10 @@
     <app-section-heading [heading]="heading"></app-section-heading>
     <div class="content">
         <div class="person">
-            <figure>
+            <figure class="animate__animated animate__fadeInLeft">
                 <img [src]="ericImgUrl" class="ericImg">
             </figure>
-            <div class="personTxt">
+            <div class="personTxt animate__animated animate__fadeInRight">
                 <h3 class="redTxt">Eric Bruch</h3>
                 <p>
                     <q>Let's start to add something new to this world!</q>
@@ -13,19 +13,19 @@
             </div>
 
         </div>
-        <div class="email" matTooltip="Write me an eMail">
+        <div class="email animate__animated animate__fadeInLeft" matTooltip="Write me an eMail">
             <mat-icon class="emailIcon">email</mat-icon> <a
                 href="mailto:eric.bruch@outlook.de">Eric.Bruch@outlook.de</a>
         </div>
 
         <div class="links">
-            <figure class="linkContainer backgroundDarkBlue" matTooltip="Contact me on linkedin">
+            <figure class="linkContainer backgroundDarkBlue animate__animated animate__fadeInLeft" matTooltip="Contact me on linkedin">
                 <a [href]="linkedInUrlEric" target="_blank" rel='noopener noreferrer'>
                     <img [src]="linkedInImgSrc" class="link">
                 </a>
             </figure>
 
-            <figure class="linkContainer backgroundDarkBlue" matTooltip="Check out my GitHub Projects">
+            <figure class="linkContainer backgroundDarkBlue animate__animated animate__fadeInRight" matTooltip="Check out my GitHub Projects">
                 <a [href]="githubUrlEric" target="_blank" rel='noopener noreferrer'>
                     <img [src]="githubImgSrc" class="link">
                 </a>

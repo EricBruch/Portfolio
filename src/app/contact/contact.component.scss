@@ -31,6 +31,7 @@
     p {
       font-size: 1rem;
       overflow-wrap: break-word;
+      max-width: 20rem;
       margin-left: 32px;
       margin-right: 32px;
     }
@@ -40,6 +41,7 @@
 .email {
   margin: 32px;
   font-size: 1.1rem;
+  display: flex;
 
   .emailIcon {
     margin-right: 8px;

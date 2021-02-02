@@ -44,6 +44,7 @@ export class PortfolioComponent implements OnInit {
         The frontend of the application is created in vanilla JS/HTML/CSS. The backend is created
         with Firebase from Google.`,
       imgSrc: 'assets/pictures/join.jpg',
+      url: 'http://eric-bruch.developerakademie.com/join/index.html',
     };
     this.addToProjects(join, projectType.javascript);
   }
@@ -61,6 +62,7 @@ export class PortfolioComponent implements OnInit {
       AngularMaterial. It is responsive for desktop, tablet and smartphone. 
       For backend Firebase from Google was used.`,
       imgSrc: 'assets/pictures/sadey.jpg',
+      url: 'https://sadey-demo.web.app/',
     };
     this.addToProjects(sadey, projectType.angular);
   }
@@ -76,6 +78,7 @@ export class PortfolioComponent implements OnInit {
         the "locco" chicken with tabasco bottles. El Pollo Locco was created with Angular &
         and a focus on Object-Oriented TypeScript.`,
       imgSrc: 'assets/pictures/elPolloLoco.jpg',
+      url: 'http://eric-bruch.developerakademie.com/el-pollo-loco/',
     };
     this.addToProjects(elPolloLocco, projectType.angular);
   }
@@ -89,6 +92,7 @@ export class PortfolioComponent implements OnInit {
       description: `Sakura Ramen is a fictional japanese ramen restaurant. It was created to train proficient 
       skills in HTML & CSS. Additionally, the webside was created to be responsive for desktop, tablet and smartphone.`,
       imgSrc: 'assets/pictures/sakuraRamen.jpg',
+      url: 'http://eric-bruch.developerakademie.com/Sakura_Ramen/',
     };
     this.addToProjects(join, projectType.htmlCss);
   }
@@ -103,6 +107,7 @@ export class PortfolioComponent implements OnInit {
       The goal of the task was to build proficiency in vanilla JavaScript by creating custom JavaScript Features.
       Implemented Features are: a professional Image-slider, a picture gallery and list of activities to choose from.`,
       imgSrc: 'assets/pictures/winterWonderland.jpg',
+      url: 'http://eric-bruch.developerakademie.com/Winter-Wonderland/',
     };
     this.addToProjects(winterWonderland, projectType.javascript);
   }
@@ -115,6 +120,7 @@ export class PortfolioComponent implements OnInit {
       headline: `Simple Angular Webside`,
       description: `AngularFirst is a fictional simple webside that was created to get familiar with basic Angular concepts`,
       imgSrc: 'assets/pictures/angularFirst.jpg',
+      url: 'http://eric-bruch.developerakademie.com/angularFirstApp/',
     };
     this.addToProjects(angularFirst, projectType.angular);
   }

@@ -6,7 +6,8 @@
             <div class="imgOverlay">
                 <p class="overlayTxt redTxt">{{ project.name }} - {{ project.typeWritten }}</p>
                 <div class="redUnderline margin-bot-8"></div>
-                <button mat-flat-button class="btn">Try it Yourself!</button>
+                <a class="btn" mat-flat-button [href]="project.url" target="_blank" rel='noopener noreferrer'>Try it
+                    Yourself!</a>
             </div>
         </figure>
 
@@ -15,7 +16,8 @@
                 {{ project.description }}
             </p>
             <div class="actionBtn btnBorderRadius">
-                <button mat-flat-button>Try it Yourself!</button>
+                <a class="btn" mat-flat-button [href]="project.url" target="_blank" rel='noopener noreferrer'>Try it
+                    Yourself!</a>
             </div>
 
         </div>

@@ -76,7 +76,6 @@
 
   .projectDescription {
     display: flex;
-    justify-content: center;
   }
 
   .actionBtn {
@@ -102,12 +101,24 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
-    
   }
+
   .ProjectContent {
     flex-direction: column;
     align-content: center;
     align-items: center;
     flex-wrap: initial;
+  }
+
+  .img {
+    width: 12rem !important;
+    height: 6rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .projectDescription {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 }

@@ -11,6 +11,7 @@
 .person {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   .ericImg {
     width: 300px;
@@ -30,6 +31,8 @@
     p {
       font-size: 1rem;
       overflow-wrap: break-word;
+      margin-left: 32px;
+      margin-right: 32px;
     }
   }
 }
@@ -48,6 +51,7 @@
   flex-wrap: wrap;
   margin: 32px;
   display: flex;
+  justify-content: center;
 }
 
 .linkContainer {
@@ -58,4 +62,16 @@
   border: 2px solid white;
   width: 6rem;
   height: 6rem;
+}
+
+@media only screen and (max-width: 830px) {
+  .person {
+    flex-direction: column;
+  }
+
+  .ericImg {
+    width: 200px !important;
+  }
+
+
 }

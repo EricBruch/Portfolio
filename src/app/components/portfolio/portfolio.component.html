@@ -1,20 +1,23 @@
 <div class="bgContainer">
     <app-section-heading [heading]="heading"></app-section-heading>
+    <div >
+        <mat-tab-group animationDuration="1000ms" class="margin-left-16 margin-right-16">
+            <mat-tab label="All">
+                <div class="tab">
+                    <app-projects [projects]="projects.all"></app-projects>
+                </div>
+            </mat-tab>
+            <mat-tab label="JavaScript">
+                <app-projects [projects]="projects.javascript"></app-projects>
+            </mat-tab>
 
-    <mat-tab-group animationDuration="1000ms">
-        <mat-tab label="All">
-            <app-projects [projects]="projects.all"></app-projects>
-        </mat-tab>
-        <mat-tab label="JavaScript">
-            <app-projects [projects]="projects.javascript"></app-projects>
-        </mat-tab>
-
-        <mat-tab label="Angular">
-            <app-projects [projects]="projects.angular"></app-projects>
-        </mat-tab>
-        <mat-tab label="HTML/CSS">
-            <app-projects [projects]="projects.htmlCss"></app-projects>
-        </mat-tab>
-    </mat-tab-group>
+            <mat-tab label="Angular">
+                <app-projects [projects]="projects.angular"></app-projects>
+            </mat-tab>
+            <mat-tab label="HTML/CSS">
+                <app-projects [projects]="projects.htmlCss"></app-projects>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
 
 </div>

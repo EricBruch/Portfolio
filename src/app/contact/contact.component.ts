@@ -11,9 +11,10 @@ export class ContactComponent implements OnInit {
 
   heading: string = 'Contact';
   ericImgUrl: string = ERIC_IMG_SRC;
-  linkedInSrc: string = 'assets/pictures/linkedin.png';
-  linkedInEricUrl: string = 'http://www.linkedin.com/in/eric-bruch';
-  gitHubEricUrl: string = 'https://github.com/EricBruch';
+  linkedInImgSrc: string = 'assets/pictures/icons/linkedin.png';
+  linkedInUrlEric: string = 'https://www.linkedin.com/in/eric-bruch';
+  githubUrlEric: string = 'https://github.com/EricBruch';
+  githubImgSrc: string = 'assets/pictures/icons/github.png';
 
   ngOnInit(): void {}
 }

@@ -16,7 +16,7 @@
                     routerLink="/about">About</a>
                 <a class="sidebarNavItem backgroundDarkBlue whiteTxt" [class.redTxt]="isPortfolio" mat-raised-button
                     routerLink="/portfolio">Portfolio</a>
-                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" mat-raised-button
+                <a class="sidebarNavItem backgroundDarkBlue whiteTxt" [class.redTxt]="isContact" mat-raised-button
                     routerLink="/contact">Contact</a>
             </div>
         </mat-drawer>
@@ -30,7 +30,7 @@
                     <a routerLink="/" class="navItem">home</a>
                     <a routerLink="/about" class="navItem" [class.redTxt]="isAbout">about</a>
                     <a routerLink="/portfolio" class="navItem" [class.redTxt]="isPortfolio">portfolio</a>
-                    <a routerLink="/contact" class="navItem">contact</a>
+                    <a routerLink="/contact" class="navItem" [class.redTxt]="isContact">contact</a>
                 </nav>
             </div>
 

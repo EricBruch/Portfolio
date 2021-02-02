@@ -19,10 +19,9 @@ export class AppComponent {
 
   hightlightCurrentRoute(event: Event) {
     if (event instanceof NavigationEnd) {
-      console.log('navigationEnd');
-      console.log(event.urlAfterRedirects);
       this.isAbout = event.urlAfterRedirects === '/about';
       this.isPortfolio = event.urlAfterRedirects === '/portfolio';
+      this.isContact = event.urlAfterRedirects === '/contact';
     }
   }
 }

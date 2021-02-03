@@ -4,7 +4,7 @@
     <div class="personContainer flex-column-center text-center padding-16" inViewport [inViewportOptions]="{ threshold: [1] }"
         (inViewportAction)="onIntersection($event)"
         [ngClass]="{'animate__animated animate__fadeInLeft': ericContVisible}">
-        <img [src]="ericImgUrl" class="ericImg">
+        <img [src]="ericImgUrl" class="ericImg imgBorder">
         <h3>Who's <span>Eric</span>?</h3>
         <p>
             I'm a Front-End Developer currently located in Vienna, Austria.<br>

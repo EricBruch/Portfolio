@@ -66,6 +66,7 @@ body {
   --red: #c00;
   --green: #06ac0c;
   --darkcyan: #008b8b;
+  --lucidCyan: #0eedda;
 
   // --textSize: 2.4rem;
 }
@@ -86,10 +87,10 @@ body {
   background-color: var(--darkBlue) !important;
 }
 
-.mat-button.mat-primary .mat-button-focus-overlay {
-  background-color: transparent !important;
-  color: red !important;
-}
+// .mat-button.mat-primary .mat-button-focus-overlay {
+//   background-color: transparent !important;
+//   color: red !important;
+// }
 
 .text-center {
   text-align: center;
@@ -168,4 +169,9 @@ body {
   &:hover {
     color: var(--red);
   }
+}
+
+.imgBorder {
+  border-radius: 20%;
+  border: solid 1px var(--darkBlue);
 }

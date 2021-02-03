@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { intersection } from 'src/app/utils/types/intersection.type';
+import { skill } from 'src/app/utils/types/skill.type';
 
 @Component({
   selector: 'app-skills',
@@ -13,38 +14,55 @@ export class SkillsComponent implements OnInit {
   skillsAnimated: boolean = false;
   skillsShown: number = 0;
 
-  skills = [
+  skills: skill[] = [
     {
       label: 'HTML',
       skillLevel: '90%',
+      info: false,
+      infoTxt: '',
     },
     {
       label: 'CSS',
       skillLevel: '90%',
+      info: false,
+      infoTxt: '',
     },
     {
       label: 'JavaScript',
       skillLevel: '80%',
+      info: false,
+      infoTxt: '',
     },
     {
       label: 'Angular',
       skillLevel: '70%',
+      info: false,
+      infoTxt: '',
     },
     {
-      label: 'Postgres',
+      label: 'Database',
       skillLevel: '65%',
+      info: true,
+      infoTxt: 'Focus on Postgres',
     },
     {
-      label: 'Scrum',
+      label: 'Agile',
       skillLevel: '70%',
+      info: true,
+      infoTxt:
+        'Working as Agile Tester / Testautomation engineer and as a Scrum Master',
     },
     {
       label: 'Test Automation',
       skillLevel: '70%',
+      info: true,
+      infoTxt: 'Tosca (Expert), Selenium (Foundation), Protractor (Foundation)',
     },
     {
       label: 'Flask',
       skillLevel: '50%',
+      info: false,
+      infoTxt: '',
     },
   ];
 

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppComponent } from './app.component';
 import { LandingComponent } from './components/landing/landing.component';
@@ -31,6 +32,7 @@ import { InViewportModule } from 'ng-in-viewport';
     SharedModule,
     MatIconModule,
     InViewportModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

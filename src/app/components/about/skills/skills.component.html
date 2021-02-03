@@ -1,9 +1,13 @@
 <div class="skillContainer">
-    <div *ngFor="let skill of skills; index as i" inViewport
-        [inViewportOptions]="{ threshold: [1] }" (inViewportAction)="onIntersection($event, i)"
-        class="skill text-center invisible">
-        <div class="skillLabel flex-center">
-            {{ skill.label }}
+    <div *ngFor="let skill of skills; index as i" inViewport [inViewportOptions]="{ threshold: [1] }"
+        (inViewportAction)="onIntersection($event, i)" class="skill text-center invisible">
+        <div class="skillLabelContainer">
+            <div>
+                {{ skill.label }}
+            </div>
+            <ng-container *ngIf="skill.info">
+                <mat-icon matTooltip="{{ skill.infoTxt }}" [matTooltipPosition]="'above'" class="skillInfo">info</mat-icon>
+            </ng-container>
         </div>
         <div class="skillProgressBarContainer">
             <div [style.width]="skill.skillLevel" class="skillProgressBar"></div>

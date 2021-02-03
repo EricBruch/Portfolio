@@ -9,7 +9,7 @@
 }
 
 .skill {
-  --skillHeight: 2rem;
+  --skillHeight: 2.2rem;
   display: flex;
   position: relative;
   border-radius: 5px;
@@ -17,13 +17,19 @@
   height: var(--skillHeight);
   color: var(--darkBlue);
 
-  .skillLabel {
-    width: 10rem;
+  .skillLabelContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 10.4rem;
     height: var(--skillHeight);
     background-color: var(--white);
-
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+
+    .skillInfo {
+      margin-right: 6px;
+    }
   }
 
   .skillProgressBarContainer {

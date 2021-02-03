@@ -1,5 +1,6 @@
 .sidebarContainer {
-  min-width: 30vw;
+  width: 30vw;
+  min-width: 130px;
 
   .home {
     color: var(--white);
@@ -35,7 +36,7 @@
 }
 
 .navBarUnderline {
-  border-bottom: 4px solid var(--darkcyan);
+  border-bottom: 4px solid var(--lucidCyan);
 }
 
 .navBarHeight {
